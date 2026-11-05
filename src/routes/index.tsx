@@ -246,7 +246,7 @@ function Hero() {
         <span className="block">of Companies</span>
       </div>
 
-      <div className="relative mx-auto max-w-[1536px] px-4 sm:px-6 lg:px-8 xl:px-10 w-full">
+      <div className="relative mx-auto max-w-[1536px] px-3 sm:px-6 lg:px-8 xl:px-10 w-full">
         {/* Central hub */}
         <div className="relative flex flex-col items-center">
           <Tilt
@@ -379,11 +379,11 @@ function StatsStrip() {
     { v: STATS.years, l: "Years of Excellence" },
   ];
   return (
-    <section className="relative -mt-8 px-4 sm:px-6 lg:px-8 xl:px-10 z-10">
+    <section className="relative -mt-8 px-3 sm:px-6 lg:px-8 xl:px-10 z-10">
       <div className="mx-auto max-w-[1536px] grid grid-cols-2 md:grid-cols-4 gap-4">
         {items.map((it) => (
           <Tilt key={it.l} max={8} lift={6} className="glass-strong rounded-3xl">
-            <div className="p-8 text-center">
+            <div className="p-5 sm:p-8 text-center">
               <div className="font-display text-4xl lg:text-5xl text-metallic tilt-layer">
                 {it.v}
               </div>
@@ -400,7 +400,7 @@ function StatsStrip() {
 
 function DubaiSpotlight() {
   return (
-    <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 xl:px-10 overflow-hidden">
+    <section className="relative py-24 sm:py-32 px-3 sm:px-6 lg:px-8 xl:px-10 overflow-hidden">
       <div className="mx-auto max-w-[1536px] relative grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 space-y-6">
           <SectionEyebrow>Now in Dubai</SectionEyebrow>
@@ -468,7 +468,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="light-band relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 xl:px-10"
+      className="light-band relative py-24 sm:py-32 px-3 sm:px-6 lg:px-8 xl:px-10"
     >
       <div className="mx-auto max-w-[1536px]">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
@@ -523,7 +523,7 @@ function Services() {
 
 function Projects() {
   return (
-    <section className="relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 xl:px-10 overflow-hidden">
+    <section className="relative py-24 sm:py-32 px-3 sm:px-6 lg:px-8 xl:px-10 overflow-hidden">
       <div className="mx-auto max-w-[1536px] relative">
         <div className="text-center space-y-3 mb-14">
           <SectionEyebrow>Our Portfolio</SectionEyebrow>
@@ -596,7 +596,7 @@ function Process() {
     },
   ];
   return (
-    <section className="light-band relative py-24 sm:py-32 px-4 sm:px-6 lg:px-8 xl:px-10">
+    <section className="light-band relative py-24 sm:py-32 px-3 sm:px-6 lg:px-8 xl:px-10">
       <div className="mx-auto max-w-[1536px]">
         <div className="text-center space-y-3 mb-14">
           <SectionEyebrow>How We Work</SectionEyebrow>
@@ -609,7 +609,7 @@ function Process() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {steps.map((s) => (
             <Tilt key={s.n} className="glass rounded-2xl">
-              <div className="p-7 space-y-4 h-full">
+              <div className="p-4 sm:p-7 space-y-4 h-full">
                 <div className="flex items-center justify-between tilt-layer-sm">
                   <div className="w-11 h-11 rounded-xl glass-strong grid place-items-center text-white">
                     <s.icon className="w-5 h-5" />
@@ -635,7 +635,7 @@ function Certifications() {
     { c: "Saudi Building Code", d: "Full compliance" },
   ];
   return (
-    <section className="light-band relative px-4 sm:px-6 lg:px-8 xl:px-10 py-20">
+    <section className="light-band relative px-3 sm:px-6 lg:px-8 xl:px-10 py-20">
       <div className="mx-auto max-w-[1536px]">
         <div className="text-center space-y-3 mb-12">
           <SectionEyebrow>Accredited</SectionEyebrow>
@@ -644,7 +644,7 @@ function Certifications() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {certs.map((x) => (
             <Tilt key={x.c} max={9} className="glass rounded-2xl">
-              <div className="p-7 text-center space-y-2 h-full">
+              <div className="p-4 sm:p-7 text-center space-y-2 h-full">
                 <Award className="w-7 h-7 mx-auto text-primary tilt-layer-sm" />
                 <div className="font-display text-white text-lg">{x.c}</div>
                 <div className="text-xs uppercase tracking-[0.18em] text-foreground/55">{x.d}</div>
@@ -676,7 +676,7 @@ function Testimonials() {
     },
   ];
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28">
+    <section className="relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28">
       <div className="mx-auto max-w-[1536px]">
         <div className="text-center space-y-3 mb-12">
           <SectionEyebrow>Client Voices</SectionEyebrow>
@@ -685,7 +685,7 @@ function Testimonials() {
         <div className="grid md:grid-cols-3 gap-5">
           {quotes.map((t) => (
             <Tilt key={t.c} className="glass rounded-2xl">
-              <div className="p-8 space-y-5 h-full">
+              <div className="p-4 sm:p-8 space-y-5 h-full">
                 <Quote className="w-7 h-7 text-white/25 tilt-layer-sm" />
                 <p className="text-sm text-foreground/80 leading-relaxed">"{t.q}"</p>
                 <div className="hairline" />
@@ -743,7 +743,7 @@ function GlobalPresence() {
     },
   ];
   return (
-    <section className="light-band relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
+    <section className="light-band relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-[1536px] relative">
         <div className="text-center space-y-3 mb-12">
           <SectionEyebrow>Global Footprint</SectionEyebrow>
@@ -781,7 +781,7 @@ function Clients() {
   const row = [...CLIENTS, ...CLIENTS];
   return (
     <section className="relative py-24 overflow-hidden">
-      <div className="text-center space-y-3 mb-12 px-4 sm:px-6 lg:px-8 xl:px-10">
+      <div className="text-center space-y-3 mb-12 px-3 sm:px-6 lg:px-8 xl:px-10">
         <SectionEyebrow>Trusted Partners</SectionEyebrow>
         <SectionTitle>Major Clients</SectionTitle>
       </div>
@@ -805,13 +805,13 @@ function Clients() {
 
 function CTA() {
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 xl:px-10 py-20">
+    <section className="relative px-3 sm:px-6 lg:px-8 xl:px-10 py-20">
       <Tilt
         max={5}
         lift={4}
         className="mx-auto max-w-[1536px] glass-strong rounded-3xl overflow-hidden"
       >
-        <div className="p-10 md:p-16 text-center relative">
+        <div className="p-5 sm:p-10 md:p-16 text-center relative">
           <div className="relative space-y-6 tilt-layer-sm">
             <SectionEyebrow>Let's Build</SectionEyebrow>
             <h2 className="font-display text-4xl md:text-5xl text-metallic max-w-2xl mx-auto">
@@ -868,7 +868,7 @@ const INDUSTRIES = [
 
 function Industries() {
   return (
-    <section className="light-band relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
+    <section className="light-band relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-[1536px] relative">
         <div className="text-center space-y-3 mb-12">
           <SectionEyebrow>Sectors We Serve</SectionEyebrow>
@@ -923,7 +923,7 @@ const WHY = [
 
 function WhyUs() {
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
+    <section className="relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-[1536px] relative">
         <div className="text-center space-y-3 mb-12">
           <SectionEyebrow>Why GST Group</SectionEyebrow>
@@ -948,7 +948,7 @@ function WhyUs() {
 function LatestInsights() {
   const posts = POSTS.slice(0, 3);
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
+    <section className="relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-[1536px] relative">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-12">
           <div className="space-y-3">
@@ -1016,7 +1016,7 @@ const FAQS = [
 
 function FAQ() {
   return (
-    <section className="relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
+    <section className="relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 sm:py-28 overflow-hidden">
       <div className="mx-auto max-w-4xl relative">
         <div className="text-center space-y-3 mb-12">
           <SectionEyebrow>Questions</SectionEyebrow>

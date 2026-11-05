@@ -62,16 +62,16 @@ function Contact() {
         subtitle="Tell us about your project — design, build, fabricate or fit-out — and our engineers will get back within one business day."
       />
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pb-20">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pb-20">
         <div className="mx-auto max-w-[1536px] grid lg:grid-cols-5 gap-6">
           {result ? (
-            <div className="lg:col-span-3 glass-strong rounded-3xl p-8 grid place-items-center">
+            <div className="lg:col-span-3 glass-strong rounded-3xl p-5 sm:p-8 grid place-items-center">
               <InquiryThanks result={result} dark />
             </div>
           ) : (
             <form
               onSubmit={submit}
-              className="lg:col-span-3 glass-strong rounded-3xl p-8 space-y-5"
+              className="lg:col-span-3 glass-strong rounded-3xl p-5 sm:p-8 space-y-5"
             >
               <SectionEyebrow>Project Inquiry</SectionEyebrow>
               <h2 className="font-display text-2xl text-white">Send us a message</h2>
@@ -110,13 +110,13 @@ function Contact() {
           )}
 
           <aside className="lg:col-span-2 space-y-4">
-            <Tilt max={6} className="glass-strong rounded-3xl p-7 space-y-4">
+            <Tilt max={6} className="glass-strong rounded-3xl p-5 sm:p-7 space-y-4">
               <h3 className="font-display text-lg text-white">Direct contact</h3>
               <a href="mailto:sales@gstsaudi.com" className="flex items-center gap-3 text-sm text-foreground/80 hover:text-white"><Mail className="w-4 h-4 text-primary" /> sales@gstsaudi.com</a>
               <a href="tel:+966114509354" className="flex items-center gap-3 text-sm text-foreground/80 hover:text-white"><Phone className="w-4 h-4 text-primary" /> 0114 509354</a>
               <div className="flex items-start gap-3 text-sm text-foreground/80"><MapPin className="w-4 h-4 text-primary mt-0.5" /> Riyadh, Kingdom of Saudi Arabia</div>
             </Tilt>
-            <Tilt max={6} className="glass-strong rounded-3xl p-7 space-y-3">
+            <Tilt max={6} className="glass-strong rounded-3xl p-5 sm:p-7 space-y-3">
               <h3 className="font-display text-lg text-white">Working hours</h3>
               <div className="text-sm text-foreground/70">Sun – Thu · 09:00 – 18:00 AST</div>
               <div className="hairline" />
@@ -126,13 +126,13 @@ function Contact() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pb-32">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pb-32">
         <div className="mx-auto max-w-[1536px]">
           <SectionEyebrow>Global Offices</SectionEyebrow>
           <h2 className="font-display text-3xl lg:text-4xl text-metallic mt-3 mb-8">Find us across four countries</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {OFFICES.map((o) => (
-              <Tilt key={o.city} className="glass rounded-2xl p-6 space-y-3">
+              <Tilt key={o.city} className="glass rounded-2xl p-4 sm:p-6 space-y-3">
                 <div className="text-xs uppercase tracking-[0.25em] text-primary">{o.country}</div>
                 <h3 className="font-display text-xl text-white">{o.city}</h3>
                 <div className="hairline" />

@@ -117,7 +117,7 @@ export function OdooFeatureEcosystem() {
   return (
     <section
       id="odoo-ecosystem"
-      className="light-band relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 xl:px-10"
+      className="light-band relative py-16 sm:py-24 px-3 sm:px-6 lg:px-8 xl:px-10"
     >
       <div className="mx-auto max-w-[1536px]">
         {/* Section Header */}

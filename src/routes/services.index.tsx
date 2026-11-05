@@ -42,7 +42,7 @@ function ServicesIndex() {
         subtitle="From design and engineering to metal, glass, civil, MEP and IT — we cover the full lifecycle of complex builds, fully integrated under one roof."
       />
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pb-32">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pb-32">
         <div className="mx-auto max-w-[1536px] grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {SERVICES.map((s) => (
             <Tilt key={s.slug} className="rounded-2xl glass overflow-hidden">

@@ -111,7 +111,7 @@ function Portfolio() {
         }
         subtitle="A selection of milestone projects delivered for leading developers, contractors and industrial groups."
       />
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pb-32">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pb-32">
         <div className="mx-auto max-w-[1536px] grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {PROJECTS.map((p) => (
             <Tilt key={p.name} className="rounded-3xl overflow-hidden glass">

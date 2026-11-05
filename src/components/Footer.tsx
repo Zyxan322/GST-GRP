@@ -16,7 +16,7 @@ export function Footer() {
     <footer className="relative mt-32">
       <div className="absolute inset-x-0 -top-px hairline" />
       <div className="glass-dark relative">
-        <div className="mx-auto max-w-[1536px] px-4 sm:px-6 lg:px-8 xl:px-10 py-16 grid lg:grid-cols-12 gap-12">
+        <div className="mx-auto max-w-[1536px] px-3 sm:px-6 lg:px-8 xl:px-10 py-16 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4 space-y-5">
             <Link to="/" className="flex items-center gap-3 hover-3d">
               <img src={logo} alt="GST Group logo" width={485} height={409} className="h-14 w-auto object-contain" />
@@ -71,7 +71,7 @@ export function Footer() {
 
         {/* Offices map ribbon */}
         <div className="border-t border-white/5">
-          <div className="mx-auto max-w-[1536px] px-4 sm:px-6 lg:px-8 xl:px-10 py-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="mx-auto max-w-[1536px] px-3 sm:px-6 lg:px-8 xl:px-10 py-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {OFFICES.map((o) => (
               <div key={o.city} className="glass rounded-xl p-4 flex items-center justify-between hover-3d">
                 <div>
@@ -88,7 +88,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/5">
-          <div className="mx-auto max-w-[1536px] px-4 sm:px-6 lg:px-8 xl:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-foreground/65">
+          <div className="mx-auto max-w-[1536px] px-3 sm:px-6 lg:px-8 xl:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-foreground/65">
             <div>© {new Date().getFullYear()} GST Group. All rights reserved.</div>
             <div>ISO 9001 · 14001 · 45001 Certified</div>
           </div>

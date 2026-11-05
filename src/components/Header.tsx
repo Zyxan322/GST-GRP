@@ -60,11 +60,11 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 px-4 sm:px-6 lg:px-8 xl:px-10 pt-3 sm:pt-4">
+      <header className="fixed inset-x-0 top-0 z-50 px-3 sm:px-6 lg:px-8 xl:px-10 pt-3 sm:pt-4">
         <div
           className={`glass-strong header-shell mx-auto max-w-[1536px] rounded-2xl transition-all duration-500 ${scrolled ? "shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)]" : ""}`}
         >
-          <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-10 py-3">
+          <div className="flex items-center justify-between px-3 sm:px-6 lg:px-8 xl:px-10 py-3">
             <Link to="/" className="flex items-center gap-3 group hover-3d">
               <img
                 src={logo}

@@ -131,7 +131,7 @@ function ServiceDetail() {
     <div className="min-h-screen">
       <Header />
 
-      <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8 xl:px-10 relative overflow-hidden">
+      <section className="pt-32 sm:pt-40 pb-20 px-3 sm:px-6 lg:px-8 xl:px-10 relative overflow-hidden">
         <div className="relative mx-auto max-w-[1536px] grid lg:grid-cols-12 gap-10 items-center">
           <div className="lg:col-span-7 space-y-5 animate-rise">
             <SectionEyebrow>Specialized Service</SectionEyebrow>
@@ -177,7 +177,7 @@ function ServiceDetail() {
 
       {s.slug === "it-services" && <ITServices />}
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 py-20">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 py-20">
         <div className="mx-auto max-w-[1536px] grid md:grid-cols-3 gap-4">
           {[
             { v: "End-to-end", l: "From design to handover" },
@@ -196,7 +196,7 @@ function ServiceDetail() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 py-20">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 py-20">
         <div className="mx-auto max-w-[1536px]">
           <div className="flex items-end justify-between mb-8">
             <SectionTitle>Other services</SectionTitle>

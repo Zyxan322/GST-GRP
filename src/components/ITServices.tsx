@@ -106,7 +106,7 @@ export function ITServices() {
   return (
     <section
       id="it-services"
-      className="light-band relative py-24 sm:py-28 px-4 sm:px-6 lg:px-8 xl:px-10"
+      className="light-band relative py-16 sm:py-28 px-3 sm:px-6 lg:px-8 xl:px-10"
     >
       <div className="mx-auto max-w-[1536px]">
         {/* Header */}
@@ -127,10 +127,10 @@ export function ITServices() {
                 <TabsTrigger
                   key={cat.id}
                   value={cat.id}
-                  className="rounded-full px-6 py-2.5 text-sm font-medium text-foreground/60 data-[state=active]:bg-white/10 data-[state=active]:text-white data-[state=active]:shadow-sm transition-all"
+                  className="rounded-full px-3 py-2.5 text-xs font-medium text-foreground/60 transition-all data-[state=active]:bg-white/10 data-[state=active]:text-white data-[state=active]:shadow-sm sm:px-6 sm:text-sm"
                 >
                   {cat.label}
-                  <span className="ml-2 text-xs font-bold bg-white/10 data-[state=active]:bg-primary/15 data-[state=active]:text-primary text-foreground/45 rounded-full px-2 py-0.5">
+                  <span className="ml-1 rounded-full bg-white/10 px-2 py-0.5 text-xs font-bold text-foreground/45 data-[state=active]:bg-primary/15 data-[state=active]:text-primary sm:ml-2">
                     {cat.id === "odoo" ? odooServices.length : itServices.length}
                   </span>
                 </TabsTrigger>

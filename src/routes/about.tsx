@@ -110,7 +110,7 @@ function About() {
         subtitle="Established in 2000, GST Group has grown into one of the region's most trusted names in construction and engineering — delivering excellence across borders."
       />
 
-      <section className="light-band px-4 sm:px-6 lg:px-8 xl:px-10 py-20">
+      <section className="light-band px-3 sm:px-6 lg:px-8 xl:px-10 py-20">
         <div className="mx-auto max-w-[1536px] text-center space-y-3 mb-12">
           <SectionEyebrow>Global Footprint</SectionEyebrow>
           <SectionTitle>Where in the world we build</SectionTitle>
@@ -124,11 +124,11 @@ function About() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pb-20">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pb-20">
         <div className="mx-auto max-w-[1536px] grid md:grid-cols-2 gap-6">
           <Tilt
             max={7}
-            className="glass-strong rounded-3xl p-10 space-y-4 relative overflow-hidden"
+            className="glass-strong rounded-3xl p-5 sm:p-8 lg:p-10 space-y-4 relative overflow-hidden"
           >
             <Eye className="w-7 h-7 text-primary" />
             <h3 className="font-display text-2xl text-white">Our Vision</h3>
@@ -140,7 +140,7 @@ function About() {
           </Tilt>
           <Tilt
             max={7}
-            className="glass-strong rounded-3xl p-10 space-y-4 relative overflow-hidden"
+            className="glass-strong rounded-3xl p-5 sm:p-8 lg:p-10 space-y-4 relative overflow-hidden"
           >
             <Target className="w-7 h-7 text-primary" />
             <h3 className="font-display text-2xl text-white">Our Mission</h3>
@@ -153,7 +153,7 @@ function About() {
         </div>
       </section>
 
-      <section className="light-band px-4 sm:px-6 lg:px-8 xl:px-10 py-20">
+      <section className="light-band px-3 sm:px-6 lg:px-8 xl:px-10 py-20">
         <div className="mx-auto max-w-[1536px] text-center space-y-3 mb-12">
           <SectionEyebrow>Core Values</SectionEyebrow>
           <SectionTitle>Principles that guide every build</SectionTitle>
@@ -161,7 +161,7 @@ function About() {
         <div className="mx-auto max-w-[1536px] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {VALUES.map((v) => (
             <Tilt key={v.title} className="glass rounded-2xl">
-              <div className="p-6 space-y-3 h-full">
+              <div className="p-4 sm:p-6 space-y-3 h-full">
                 <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/20 grid place-items-center text-primary tilt-layer-sm">
                   <v.icon className="w-5 h-5" />
                 </div>
@@ -173,7 +173,7 @@ function About() {
         </div>
       </section>
 
-      <section className="relative px-4 sm:px-6 lg:px-8 xl:px-10 py-24 overflow-hidden">
+      <section className="relative px-3 sm:px-6 lg:px-8 xl:px-10 py-24 overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,color-mix(in_oklab,var(--primary)_14%,transparent),transparent_70%)]" />
         <div className="relative mx-auto max-w-[1536px] text-center space-y-3 mb-14">
           <SectionEyebrow>Leadership Desk</SectionEyebrow>
@@ -206,7 +206,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="p-7 pt-6 flex-1 flex flex-col gap-4 border-t border-white/10">
+              <div className="p-4 pt-4 sm:p-7 sm:pt-6 flex-1 flex flex-col gap-4 border-t border-white/10">
                 <span className="font-display text-4xl leading-none text-primary/40">&ldquo;</span>
                 <p className="text-sm text-foreground/70 leading-relaxed -mt-4">{l.quote}</p>
                 <div className="mt-auto h-px w-16 bg-gradient-to-r from-primary to-transparent" />
@@ -216,8 +216,8 @@ function About() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 pb-24">
-        <div className="mx-auto max-w-[1536px] text-center glass-strong rounded-3xl p-8 sm:p-12 space-y-5">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pt-10 pb-24">
+        <div className="mx-auto max-w-[1536px] text-center glass-strong rounded-3xl p-5 sm:p-8 lg:p-12 space-y-5">
           <SectionTitle>Build with us</SectionTitle>
           <p className="text-foreground/70 max-w-xl mx-auto">
             From concept to completion, we are ready to engineer your next milestone.

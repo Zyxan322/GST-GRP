@@ -64,7 +64,7 @@ function BlogIndex() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
               </div>
-              <div className="p-8 sm:p-10 space-y-4">
+              <div className="p-5 sm:p-10 space-y-4">
                 <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.18em] text-white">
                   Featured · {featured.category}
                 </span>

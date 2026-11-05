@@ -39,7 +39,7 @@ function Careers() {
         subtitle="We hire engineers, project managers, fabricators and craftsmen who pursue precision and take pride in lasting work."
       />
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 pb-20">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 pb-20">
         <div className="mx-auto max-w-[1536px] grid sm:grid-cols-3 gap-4">
           {[
             { v: STATS.professionals, l: "Skilled Professionals" },
@@ -47,7 +47,7 @@ function Careers() {
             { v: STATS.years, l: "Years of Excellence" },
           ].map((it) => (
             <Tilt key={it.l} className="glass rounded-2xl">
-              <div className="p-6 text-center">
+              <div className="p-4 sm:p-6 text-center">
                 <div className="font-display text-3xl text-metallic tilt-layer">{it.v}</div>
                 <div className="text-xs uppercase tracking-[0.2em] text-foreground/60 mt-2">{it.l}</div>
               </div>
@@ -56,7 +56,7 @@ function Careers() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 xl:px-10 py-16">
+      <section className="px-3 sm:px-6 lg:px-8 xl:px-10 py-16">
         <div className="mx-auto max-w-[1536px] space-y-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div className="space-y-2">
@@ -67,7 +67,7 @@ function Careers() {
           </div>
           <div className="grid gap-3">
             {ROLES.map((r) => (
-              <Tilt key={r.title} max={5} lift={4} className="glass rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between hover:-translate-y-0.5 transition group">
+              <Tilt key={r.title} max={5} lift={4} className="glass rounded-2xl p-4 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between hover:-translate-y-0.5 transition group">
                 <div className="flex items-center gap-4">
                   <div className="w-11 h-11 rounded-xl bg-primary/15 border border-primary/20 grid place-items-center text-primary"><Briefcase className="w-5 h-5" /></div>
                   <div>
