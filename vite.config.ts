@@ -17,6 +17,7 @@ const BLOG = [
 // `GITHUB_PAGES=1 npm run build` produces a fully static, pre-rendered site (dist/client)
 // that can be hosted on GitHub Pages. The default build targets Cloudflare Workers.
 const staticPages = process.env.GITHUB_PAGES === "1";
+const vercelBuild = process.env.VERCEL === "1";
 const base = process.env.PAGES_BASE ?? "/GST-International/";
 
 export default staticPages
@@ -36,4 +37,6 @@ export default staticPages
       },
       vite: { base },
     })
-  : defineConfig();
+  : defineConfig({
+      nitro: { preset: vercelBuild ? "vercel" : "cloudflare-module" },
+    });
