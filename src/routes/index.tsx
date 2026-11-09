@@ -21,7 +21,12 @@ import logoFull from "@/assets/gst-logo.png";
 import businessBayImage from "@/assets/images.jfif?url";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ProjectIllustration } from "@/components/ProjectIllustration";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
+import kafdImage from "@/assets/iking abdullah.jfif?url";
+import neomImage from "@/assets/NEOM, Saudi Arabia.jpg?url";
+import redSeaImage from "@/assets/Red Sea, Saudi Arabia.jfif?url";
+import businessBayProjectImage from "@/assets/Business Bay Tower Façade.jfif?url";
 import { SectionEyebrow, SectionTitle } from "@/components/Section";
 import { Tilt } from "@/components/Tilt";
 import { SERVICES } from "@/data/services";
@@ -58,25 +63,25 @@ const PROJECTS = [
     name: "King Abdullah Financial District",
     loc: "Riyadh, KSA",
     scope: "Glass balustrades, aluminum systems, metal works",
-    img: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&q=80",
+    img: kafdImage,
   },
   {
     name: "NEOM",
     loc: "NEOM, KSA",
     scope: "Steel structures, staircases, infrastructure",
-    img: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80",
+    img: neomImage,
   },
   {
     name: "Red Sea Development",
     loc: "Red Sea, KSA",
     scope: "Steel structures, façades, finishing",
-    img: "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1200&q=80",
+    img: redSeaImage,
   },
   {
     name: "Business Bay Towers",
     loc: "Dubai, UAE",
     scope: "Curtain walls, aluminum façades, fitout",
-    img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80",
+    img: businessBayProjectImage,
   },
 ];
 
@@ -299,9 +304,6 @@ function Hero() {
                     <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
                     {c.tag}
                   </span>
-                  <Link to="/services" className="text-white/90 font-medium hover:text-white">
-                    Details
-                  </Link>
                 </div>
               </div>
             </Tilt>
@@ -330,9 +332,6 @@ function Hero() {
                     <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
                     {c.tag}
                   </span>
-                  <Link to="/services" className="text-white/90 font-medium hover:text-white">
-                    Details
-                  </Link>
                 </div>
               </div>
             </Tilt>
@@ -539,19 +538,32 @@ function Projects() {
             <Tilt key={p.name} className="rounded-2xl glass overflow-hidden">
               <article className="group relative h-full">
                 <div className="aspect-[4/5] overflow-hidden">
-                  <ResponsiveImage
-                    src={p.img}
-                    alt={p.name}
-                    loading="lazy"
-                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
-                    className="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-700"
-                  />
+                  {p.img ? (
+                    <ResponsiveImage
+                      src={p.img}
+                      alt={`${p.name} project`}
+                      loading="lazy"
+                      sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                      className="w-full h-full object-cover opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-700"
+                    />
+                  ) : (
+                    <ProjectIllustration />
+                  )}
                   <div className="absolute inset-0 img-scrim" />
                 </div>
                 <div className="on-dark absolute inset-0 p-5 flex flex-col justify-end tilt-layer">
                   <div className="text-xs uppercase tracking-[0.25em] text-primary">{p.loc}</div>
                   <h3 className="font-display text-lg text-white mt-1">{p.name}</h3>
                   <p className="text-xs text-foreground/70 mt-2 line-clamp-2">{p.scope}</p>
+                  <div className="mt-3 flex justify-end">
+                    <Link
+                      to="/services"
+                      aria-label={`Details for ${p.name}`}
+                      className="text-xs text-white/90 font-medium hover:text-white border-b-2 border-primary pb-1"
+                    >
+                      Details
+                    </Link>
+                  </div>
                 </div>
               </article>
             </Tilt>
