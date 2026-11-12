@@ -27,6 +27,24 @@ async function sendViaWeb3Forms(input: { subject: string; body: string; replyTo?
   return res.ok && data?.success === true;
 }
 
+function openMailto(subject: string, body: string) {
+  const url = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    body,
+  )}`;
+
+  if (typeof window !== "undefined" && window.location) {
+    window.location.href = url;
+    return;
+  }
+
+  if (typeof globalThis !== "undefined") {
+    const loc = (globalThis as typeof globalThis & { location?: Location }).location;
+    if (loc) {
+      loc.href = url;
+    }
+  }
+}
+
 export async function submitInquiry(input: {
   subject: string;
   body: string;
@@ -47,8 +65,7 @@ export async function submitInquiry(input: {
   } catch {
     /* network error — fall through to mailto */
   }
-  window.location.href = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent(
-    input.subject,
-  )}&body=${encodeURIComponent(input.body)}`;
+
+  openMailto(input.subject, input.body);
   return "mailto";
 }

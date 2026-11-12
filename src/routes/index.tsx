@@ -175,9 +175,9 @@ const COMPANIES = [
   { name: "GST International", desc: "KSA", tag: "High-Voltage Engineering" },
   { name: "Signature Salon", desc: "Luxury Beauty & Spa Services", tag: "Hospitality & Wellness" },
   {
-    name: "Lazeez Point",
-    desc: "Gourmet Food & Hospitality Chain",
-    tag: "Multi-Cuisine Restaurant",
+    name: "GST Star Technical Services LLC",
+    desc: "Technical & Construction Solutions",
+    tag: "Field Services & Support",
   },
 ];
 
